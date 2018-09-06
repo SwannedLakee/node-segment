@@ -72,6 +72,7 @@
 					<li>基于词性进行联想识别</li>
 					<li>可使用JavaScript编写自定义的分词模块</li>
 				</ul>
+				<p>Fork From <a href="https://github.com/leizongmin/node-segment">leizongmin/segment</a></p>
 				<hr>
 				<ol>
 					<li>以網路翻譯小說為樣本增加字典</li>
@@ -80,7 +81,7 @@
 					<li>精簡一部分多餘字典</li>
 					<li>可額外追加字典條目而不需要增加字典檔</li>
 					<li>可將結果轉換為原始格式</li>
-					<li>遇到長句，無分段，無標點符號的行時會捨棄部分處理，來避免處理時間過長過超過記憶體負荷</li>
+					<li>遇到長句，無分段，無標點符號的行時會捨棄部分處理，來避免處理時間過長過超過記憶體負荷<br/>可於啟動 nodejs 時 加上參數 例如 <code>node --max-old-space-size=2048 xxxx.js</code> 可以避免記憶體洩漏問題</li>
 					<li><p>與原版不同預設會返回所有字元(包含分行與空格)</p>
 					</li>
 					<li><p><a href="https://npm.runkit.com/novel-segment">線上測試 by RunKit</a></p>
@@ -309,7 +310,6 @@ segment.loadDict(<span class="hljs-string">'dict.txt'</span>); <span class="hljs
 				<h2 id="-">注意</h2>
 				<p><strong>请勿用此模块来对较长且无任何标点符号的文本进行分词，否则会导致分词时间成倍增加。</strong></p>
 				<h2 id="mit-license">MIT License</h2>
-				<p>Fork From <a href="https://github.com/leizongmin/node-segment">leizongmin/segment</a></p>
 				<pre><code>Copyright (c) <span class="hljs-number">2012</span>-<span class="hljs-number">2015</span> Zongmin Lei (雷宗民) &lt;leizongmin@gmail.com&gt;
 http://ucdok.com
 
