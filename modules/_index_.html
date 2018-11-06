@@ -74,6 +74,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#_segment" class="tsd-kind-icon">_<wbr>Segment</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#__segment" class="tsd-kind-icon">__<wbr>Segment</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#versions" class="tsd-kind-icon">versions</a></li>
 							</ul>
 						</section>
 					</div>
@@ -84,10 +85,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="_segment" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> _<wbr>Segment</h3>
-					<div class="tsd-signature tsd-kind-icon">_<wbr>Segment<span class="tsd-signature-symbol">:</span> <a href="../classes/_lib_segment_.segment.html" class="tsd-signature-type">Segment</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;Segment as typeof Segment &amp; {version: string,version_dict: string,/*** 分词接口*/Segment: typeof Segment,/*** 词性接口*/POSTAG: typeof POSTAG,}</span></div>
+					<div class="tsd-signature tsd-kind-icon">_<wbr>Segment<span class="tsd-signature-symbol">:</span> <a href="../classes/_lib_segment_.segment.html" class="tsd-signature-type">Segment</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;Segment as typeof Segment &amp; {version: string,version_dict: string,versions: {&#x27;novel-segment&#x27;: string,&#x27;segment-dict&#x27;: string,&#x27;regexp-cjk&#x27;: string,&#x27;cjk-conv&#x27;: string,},/*** 分词接口*/Segment: typeof Segment,/*** 词性接口*/POSTAG: typeof POSTAG,}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/e25d082/index.ts#L11">index.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/68522c3/index.ts#L11">index.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -97,9 +98,36 @@
 					<div class="tsd-signature tsd-kind-icon">__<wbr>Segment<span class="tsd-signature-symbol">:</span> <a href="../classes/_lib_segment_.segment.html" class="tsd-signature-type">Segment</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;_Segment as typeof _Segment &amp; {default: typeof _Segment,}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/e25d082/index.ts#L24">index.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/68522c3/index.ts#L32">index.ts:32</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="versions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> versions</h3>
+					<div class="tsd-signature tsd-kind-icon">versions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;__Segment.versions &#x3D; Object.assign(__Segment.versions || {}, {&#x27;novel-segment&#x27;: _package_json.version,&#x27;segment-dict&#x27;: _segment_dict.version,&#x27;regexp-cjk&#x27;: _regexp_cjk.version,&#x27;cjk-conv&#x27;: _cjk_conv.version,})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/68522c3/index.ts#L47">index.ts:47</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>cjk-<wbr>conv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>novel-<wbr>segment<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>regexp-<wbr>cjk<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>segment-<wbr>dict<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -122,6 +150,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_index_.html#__segment" class="tsd-kind-icon">__<wbr>Segment</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_index_.html#versions" class="tsd-kind-icon">versions</a>
 					</li>
 				</ul>
 			</nav>
