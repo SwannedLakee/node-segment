@@ -104,6 +104,11 @@
 					<li>原版為一對一 =&gt; 錯字,正字</li>
 					<li>這裡為一對多 並且順序與原版相反 =&gt; 正字,錯字,...以,分隔更多字</li>
 				</ul>
+				<p>請注意 從 2.2.0 版之後 開始 更改了分詞算法</p>
+				<ul>
+					<li>當分詞得分相同時會以先出現的結果為優先</li>
+					<li>修正語法計算錯誤 { <code>形容詞 + 動詞</code> =&gt; <code>副詞 + 動詞</code> }</li>
+				</ul>
 				<h2 id="-">安装</h2>
 				<pre><code class="language-bash">npm install novel-segment</code></pre>
 				<ul>
