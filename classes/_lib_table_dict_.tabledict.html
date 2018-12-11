@@ -134,14 +134,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Table<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_lib_fs_get_.html#ioptions" class="tsd-signature-type">IOptions</a>, <span class="tsd-signature-symbol">...</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_table_dict_.tabledict.html" class="tsd-signature-type">TableDict</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Table<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../modules/_lib_fs_get_.html#ioptions" class="tsd-signature-type">IOptions</a>, existsTable<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_lib_table_core_.itabledictexiststable.html" class="tsd-signature-type">ITableDictExistsTable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_lib_table_dict_.html#itabledictrow" class="tsd-signature-type">ITableDictRow</a><span class="tsd-signature-symbol">&gt;</span>, <span class="tsd-signature-symbol">...</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_table_dict_.tabledict.html" class="tsd-signature-type">TableDict</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/core.ts#L33">lib/table/core.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/core.ts#L39">lib/table/core.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,6 +151,9 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../modules/_lib_fs_get_.html#ioptions" class="tsd-signature-type">IOptions</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> existsTable: <a href="../interfaces/_lib_table_core_.itabledictexiststable.html" class="tsd-signature-type">ITableDictExistsTable</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_lib_table_dict_.html#itabledictrow" class="tsd-signature-type">ITableDictRow</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>argv: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -170,7 +173,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#table">TABLE</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L29">lib/table/dict.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L29">lib/table/dict.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,7 +184,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#table2">TABLE2</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L30">lib/table/dict.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L30">lib/table/dict.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +195,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#options">options</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L32">lib/table/dict.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L32">lib/table/dict.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -203,7 +206,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L27">lib/table/dict.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L27">lib/table/dict.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,7 +217,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#type-1">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/core.ts#L27">lib/table/core.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/core.ts#L33">lib/table/core.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L54">lib/table/dict.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L54">lib/table/dict.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -274,7 +277,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#_add">_add</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L161">lib/table/dict.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L161">lib/table/dict.ts:161</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -312,7 +315,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#_exists">_exists</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/core.ts#L42">lib/table/core.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/core.ts#L61">lib/table/core.ts:61</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -345,7 +348,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#_remove">_remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L190">lib/table/dict.ts:190</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L190">lib/table/dict.ts:190</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -383,7 +386,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#add">add</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L88">lib/table/dict.ts:88</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L88">lib/table/dict.ts:88</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -410,7 +413,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#exists">exists</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L34">lib/table/dict.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L34">lib/table/dict.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -434,7 +437,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#json">json</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L203">lib/table/dict.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L203">lib/table/dict.ts:203</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_lib_table_core_.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_lib_table_dict_.html#itabledictrow" class="tsd-signature-type">ITableDictRow</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -452,7 +455,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#remove">remove</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L181">lib/table/dict.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L181">lib/table/dict.ts:181</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -476,7 +479,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#size">size</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/core.ts#L79">lib/table/core.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/core.ts#L98">lib/table/core.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -494,7 +497,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_lib_table_core_.abstracttabledictcore.html">AbstractTableDictCore</a>.<a href="_lib_table_core_.abstracttabledictcore.html#stringify">stringify</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/0677810/lib/table/dict.ts#L211">lib/table/dict.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/b46981a/lib/table/dict.ts#L211">lib/table/dict.ts:211</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
