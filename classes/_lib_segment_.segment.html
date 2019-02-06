@@ -99,6 +99,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_lib_segment_.segment.html#idict_blacklist" class="tsd-kind-icon">IDICT_<wbr>BLACKLIST</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_lib_segment_.segment.html#idict_stopword" class="tsd-kind-icon">IDICT_<wbr>STOPWORD</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_lib_segment_.segment.html#idict_synonym" class="tsd-kind-icon">IDICT_<wbr>SYNONYM</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-class tsd-is-static"><a href="_lib_segment_.segment.html#ioptionssegment" class="tsd-kind-icon">IOptions<wbr>Segment</a></li>
@@ -132,7 +133,9 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_lib_segment_.segment.html#_get_text" class="tsd-kind-icon">_get_<wbr>text</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_lib_segment_.segment.html#_loadblacklistdict" class="tsd-kind-icon">_load<wbr>Blacklist<wbr>Dict</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#_resolvedictfilename" class="tsd-kind-icon">_resolve<wbr>Dict<wbr>Filename</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#addblacklist" class="tsd-kind-icon">add<wbr>Blacklist</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#autoinit" class="tsd-kind-icon">auto<wbr>Init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#convertsynonym" class="tsd-kind-icon">convert<wbr>Synonym</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#doblacklist" class="tsd-kind-icon">do<wbr>Blacklist</a></li>
@@ -142,6 +145,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_lib_segment_.segment.html#getoptionsdosegment" class="tsd-kind-icon">get<wbr>Options<wbr>DoSegment</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#loadblacklistdict" class="tsd-kind-icon">load<wbr>Blacklist<wbr>Dict</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#loadblacklistoptimizerdict" class="tsd-kind-icon">load<wbr>Blacklist<wbr>Optimizer<wbr>Dict</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#loaddict" class="tsd-kind-icon">load<wbr>Dict</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#loadstopworddict" class="tsd-kind-icon">load<wbr>Stopword<wbr>Dict</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lib_segment_.segment.html#loadsynonymdict" class="tsd-kind-icon">load<wbr>Synonym<wbr>Dict</a></li>
@@ -158,12 +162,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+					<a name="idict_blacklist" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> IDICT_<wbr>BLACKLIST</h3>
+					<div class="tsd-signature tsd-kind-icon">IDICT_<wbr>BLACKLIST<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1063">lib/Segment.ts:1063</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
 					<a name="idict_stopword" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> IDICT_<wbr>STOPWORD</h3>
 					<div class="tsd-signature tsd-kind-icon">IDICT_<wbr>STOPWORD<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L1024">lib/Segment.ts:1024</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1062">lib/Segment.ts:1062</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -173,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">IDICT_<wbr>SYNONYM<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L1023">lib/Segment.ts:1023</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1061">lib/Segment.ts:1061</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -183,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">IOptions<wbr>Segment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IOptionsTableDict</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L1014">lib/Segment.ts:1014</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1052">lib/Segment.ts:1052</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -193,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">ISPLIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L996">lib/Segment.ts:996</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1034">lib/Segment.ts:1034</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -203,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">ISPLIT_<wbr>FILTER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L1000">lib/Segment.ts:1000</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1038">lib/Segment.ts:1038</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -220,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L100">lib/Segment.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L99">lib/Segment.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -242,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">DICT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L71">lib/Segment.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L70">lib/Segment.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -276,7 +290,7 @@
 					<div class="tsd-signature tsd-kind-icon">POSTAG<span class="tsd-signature-symbol">:</span> <a href="../enums/_lib_postag_.postag.html" class="tsd-signature-type">POSTAG</a><span class="tsd-signature-symbol"> =&nbsp;POSTAG</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L66">lib/Segment.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L65">lib/Segment.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -296,7 +310,7 @@
 					<div class="tsd-signature tsd-kind-icon">SPLIT<span class="tsd-signature-symbol">:</span> <a href="_lib_segment_.segment.html#isplit" class="tsd-signature-type">ISPLIT</a><span class="tsd-signature-symbol"> =&nbsp;/([\r\n]+|^[　\s+]+|[　\s]+$|[　\s]{2,})/gm as ISPLIT</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L52">lib/Segment.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L51">lib/Segment.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -319,7 +333,7 @@
 					<div class="tsd-signature tsd-kind-icon">SPLIT_<wbr>FILTER<span class="tsd-signature-symbol">:</span> <a href="_lib_segment_.segment.html#isplit_filter" class="tsd-signature-type">ISPLIT_FILTER</a><span class="tsd-signature-symbol"> =&nbsp;/^([\r\n]+)$/g as ISPLIT_FILTER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L60">lib/Segment.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L59">lib/Segment.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -340,7 +354,7 @@
 					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L94">lib/Segment.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L93">lib/Segment.ts:93</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -358,7 +372,7 @@
 					<div class="tsd-signature tsd-kind-icon">inited<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L100">lib/Segment.ts:100</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L99">lib/Segment.ts:99</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -368,7 +382,7 @@
 					<div class="tsd-signature tsd-kind-icon">modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{/*** 分词模块*/tokenizer: [],/*** 优化模块*/optimizer: [],} as {tokenizer: ISubTokenizer[],optimizer: ISubOptimizer[],}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L77">lib/Segment.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L76">lib/Segment.ts:76</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -389,7 +403,7 @@
 					<div class="tsd-signature tsd-kind-icon">optimizer<span class="tsd-signature-symbol">:</span> <a href="_lib_mod_optimizer_.optimizer.html" class="tsd-signature-type">Optimizer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L92">lib/Segment.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L91">lib/Segment.ts:91</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -399,7 +413,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="_lib_segment_.segment.html#ioptionssegment" class="tsd-signature-type">IOptionsSegment</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L98">lib/Segment.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L97">lib/Segment.ts:97</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -409,7 +423,7 @@
 					<div class="tsd-signature tsd-kind-icon">tokenizer<span class="tsd-signature-symbol">:</span> <a href="_lib_mod_tokenizer_.tokenizer.html" class="tsd-signature-type">Tokenizer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L91">lib/Segment.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L90">lib/Segment.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -419,7 +433,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Options<wbr>DoSegment<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_lib_segment_.segment.ioptionsdosegment.html" class="tsd-signature-type">IOptionsDoSegment</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L40">lib/Segment.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L39">lib/Segment.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -436,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L591">lib/Segment.ts:591</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L605">lib/Segment.ts:605</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -446,6 +460,32 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="_loadblacklistdict" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _load<wbr>Blacklist<wbr>Dict</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">_load<wbr>Blacklist<wbr>Dict<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html" class="tsd-signature-type">EnumDictDatabase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L418">lib/Segment.ts:418</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html" class="tsd-signature-type">EnumDictDatabase</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -459,7 +499,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L220">lib/Segment.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L223">lib/Segment.ts:223</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -482,6 +522,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addblacklist" class="tsd-anchor"></a>
+					<h3>add<wbr>Blacklist</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Blacklist<span class="tsd-signature-symbol">(</span>word<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, remove<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L629">lib/Segment.ts:629</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>word: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> remove: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="autoinit" class="tsd-anchor"></a>
 					<h3>auto<wbr>Init</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -491,7 +557,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L565">lib/Segment.ts:565</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L579">lib/Segment.ts:579</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -525,7 +591,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L784">lib/Segment.ts:784</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L822">lib/Segment.ts:822</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -555,7 +621,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L785">lib/Segment.ts:785</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L823">lib/Segment.ts:823</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -581,7 +647,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L618">lib/Segment.ts:618</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L656">lib/Segment.ts:656</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -604,7 +670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L648">lib/Segment.ts:648</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L686">lib/Segment.ts:686</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -638,7 +704,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L651">lib/Segment.ts:651</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L689">lib/Segment.ts:689</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -658,17 +724,20 @@
 					<a name="getdict" class="tsd-anchor"></a>
 					<h3>get<wbr>Dict</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"STOPWORD"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_segment_.segment.html#idict_stopword" class="tsd-signature-type">IDICT_STOPWORD</a></li>
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"SYNONYM"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_segment_.segment.html#idict_synonym" class="tsd-signature-type">IDICT_SYNONYM</a></li>
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"TABLE"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_lib_segment_.segment.iword.html" class="tsd-signature-type">IWord</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#stopword" class="tsd-signature-type">STOPWORD</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_segment_.segment.html#idict_stopword" class="tsd-signature-type">IDICT_STOPWORD</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#synonym" class="tsd-signature-type">SYNONYM</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_segment_.segment.html#idict_synonym" class="tsd-signature-type">IDICT_SYNONYM</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#table" class="tsd-signature-type">TABLE</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_lib_segment_.segment.iword.html" class="tsd-signature-type">IWord</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#blacklist" class="tsd-signature-type">BLACKLIST</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_segment_.segment.html#idict_blacklist" class="tsd-signature-type">IDICT_BLACKLIST</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#blacklist_for_optimizer" class="tsd-signature-type">BLACKLIST_FOR_OPTIMIZER</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_lib_segment_.segment.html#idict_blacklist" class="tsd-signature-type">IDICT_BLACKLIST</a></li>
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"TABLE2"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_segment_.segment.idict2.html" class="tsd-signature-type">IDICT2</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_lib_segment_.segment.iword.html" class="tsd-signature-type">IWord</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html" class="tsd-signature-type">EnumDictDatabase</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a></li>
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L342">lib/Segment.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L345">lib/Segment.ts:345</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,7 +748,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"STOPWORD"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#stopword" class="tsd-signature-type">STOPWORD</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>类型</p>
 									</div>
@@ -690,13 +759,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L343">lib/Segment.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L346">lib/Segment.ts:346</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"SYNONYM"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#synonym" class="tsd-signature-type">SYNONYM</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_lib_segment_.segment.html#idict_synonym" class="tsd-signature-type">IDICT_SYNONYM</a></h4>
@@ -704,13 +773,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L344">lib/Segment.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L347">lib/Segment.ts:347</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"TABLE"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#table" class="tsd-signature-type">TABLE</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_lib_segment_.segment.iword.html" class="tsd-signature-type">IWord</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -718,7 +787,35 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L345">lib/Segment.ts:345</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L348">lib/Segment.ts:348</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#blacklist" class="tsd-signature-type">BLACKLIST</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_segment_.segment.html#idict_blacklist" class="tsd-signature-type">IDICT_BLACKLIST</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L349">lib/Segment.ts:349</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#blacklist_for_optimizer" class="tsd-signature-type">BLACKLIST_FOR_OPTIMIZER</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_lib_segment_.segment.html#idict_blacklist" class="tsd-signature-type">IDICT_BLACKLIST</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L350">lib/Segment.ts:350</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -732,7 +829,21 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L346">lib/Segment.ts:346</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L351">lib/Segment.ts:351</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html" class="tsd-signature-type">EnumDictDatabase</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_lib_segment_.segment.idict.html" class="tsd-signature-type">IDICT</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L352">lib/Segment.ts:352</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -749,17 +860,18 @@
 					<a name="getdictdatabase" class="tsd-anchor"></a>
 					<h3>get<wbr>Dict<wbr>Database</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"SYNONYM"</span>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"TABLE"</span>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"STOPWORD"</span>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"BLACKLIST"</span>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#synonym" class="tsd-signature-type">SYNONYM</a>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#table" class="tsd-signature-type">TABLE</a>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#stopword" class="tsd-signature-type">STOPWORD</a>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#blacklist" class="tsd-signature-type">BLACKLIST</a>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_lib_const_.enumdictdatabase.html#blacklist_for_optimizer" class="tsd-signature-type">BLACKLIST_FOR_OPTIMIZER</a>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dict<wbr>Database&lt;R&gt;<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_lib_const_.enumdictdatabase.html" class="tsd-signature-type">EnumDictDatabase</a>, autocreate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, libTableDict<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L122">lib/Segment.ts:122</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L121">lib/Segment.ts:121</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -771,7 +883,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"SYNONYM"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#synonym" class="tsd-signature-type">SYNONYM</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> autocreate: <span class="tsd-signature-type">boolean</span></h5>
@@ -788,7 +900,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L124">lib/Segment.ts:124</a></li>
+															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L123">lib/Segment.ts:123</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -808,7 +920,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L126">lib/Segment.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L125">lib/Segment.ts:125</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -820,7 +932,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"TABLE"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#table" class="tsd-signature-type">TABLE</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> autocreate: <span class="tsd-signature-type">boolean</span></h5>
@@ -837,7 +949,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L126">lib/Segment.ts:126</a></li>
+															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L125">lib/Segment.ts:125</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -857,7 +969,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L127">lib/Segment.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L126">lib/Segment.ts:126</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -869,7 +981,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"STOPWORD"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#stopword" class="tsd-signature-type">STOPWORD</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> autocreate: <span class="tsd-signature-type">boolean</span></h5>
@@ -886,7 +998,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L129">lib/Segment.ts:129</a></li>
+															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L128">lib/Segment.ts:128</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -906,7 +1018,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L131">lib/Segment.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L130">lib/Segment.ts:130</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -918,7 +1030,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">"BLACKLIST"</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#blacklist" class="tsd-signature-type">BLACKLIST</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> autocreate: <span class="tsd-signature-type">boolean</span></h5>
@@ -935,7 +1047,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L133">lib/Segment.ts:133</a></li>
+															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L132">lib/Segment.ts:132</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -955,19 +1067,19 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L135">lib/Segment.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L134">lib/Segment.ts:134</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>R<span class="tsd-signature-symbol">: </span><a href="_lib_table_core_.abstracttabledictcore.html" class="tsd-signature-type">AbstractTableDictCore</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>R<span class="tsd-signature-symbol">: </span><a href="_lib_table_blacklist_.tabledictblacklist.html" class="tsd-signature-type">TableDictBlacklist</a></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<h5>type: <a href="../enums/_lib_const_.enumdictdatabase.html#blacklist_for_optimizer" class="tsd-signature-type">BLACKLIST_FOR_OPTIMIZER</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> autocreate: <span class="tsd-signature-type">boolean</span></h5>
@@ -984,7 +1096,56 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L137">lib/Segment.ts:137</a></li>
+															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L136">lib/Segment.ts:136</a></li>
+														</ul>
+													</aside>
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>argv: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
+												</li>
+										</ul>        </li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">R</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L138">lib/Segment.ts:138</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>R<span class="tsd-signature-symbol">: </span><a href="_lib_table_core_.abstracttabledictcore.html" class="tsd-signature-type">AbstractTableDictCore</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_lib_const_.enumdictdatabase.html" class="tsd-signature-type">EnumDictDatabase</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> autocreate: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> libTableDict: <span class="tsd-signature-type">object</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>constructor<span class="tsd-signature-symbol">: </span>function</h5>
+											<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon">new __type<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">R</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<aside class="tsd-sources">
+														<ul>
+															<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L140">lib/Segment.ts:140</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1013,7 +1174,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L582">lib/Segment.ts:582</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L596">lib/Segment.ts:596</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1042,7 +1203,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L978">lib/Segment.ts:978</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L1016">lib/Segment.ts:1016</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1086,7 +1247,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L412">lib/Segment.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L456">lib/Segment.ts:456</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="loadblacklistoptimizerdict" class="tsd-anchor"></a>
+					<h3>load<wbr>Blacklist<wbr>Optimizer<wbr>Dict</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Blacklist<wbr>Optimizer<wbr>Dict<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L461">lib/Segment.ts:461</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1109,7 +1293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L272">lib/Segment.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L275">lib/Segment.ts:275</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1155,7 +1339,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L457">lib/Segment.ts:457</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L471">lib/Segment.ts:471</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1186,7 +1370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L357">lib/Segment.ts:357</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L363">lib/Segment.ts:363</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1220,7 +1404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L941">lib/Segment.ts:941</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L979">lib/Segment.ts:979</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L910">lib/Segment.ts:910</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L948">lib/Segment.ts:948</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1295,7 +1479,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L175">lib/Segment.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L178">lib/Segment.ts:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1317,7 +1501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L176">lib/Segment.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L179">lib/Segment.ts:179</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1334,7 +1518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L177">lib/Segment.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L180">lib/Segment.ts:180</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1351,7 +1535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L178">lib/Segment.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L181">lib/Segment.ts:181</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1368,7 +1552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L179">lib/Segment.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L182">lib/Segment.ts:182</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1394,7 +1578,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L503">lib/Segment.ts:503</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L517">lib/Segment.ts:517</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1423,7 +1607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/2dfc602/lib/Segment.ts#L915">lib/Segment.ts:915</a></li>
+									<li>Defined in <a href="https://github.com/bluelovers/node-segment/blob/53bc942/lib/Segment.ts#L953">lib/Segment.ts:953</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1471,6 +1655,9 @@
 							</li>
 							<li class=" tsd-kind-interface tsd-parent-kind-class">
 								<a href="../interfaces/_lib_segment_.segment.iword.html" class="tsd-kind-icon">IWord</a>
+							</li>
+							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
+								<a href="_lib_segment_.segment.html#idict_blacklist" class="tsd-kind-icon">IDICT_<wbr>BLACKLIST</a>
 							</li>
 							<li class=" tsd-kind-type-alias tsd-parent-kind-class tsd-is-static">
 								<a href="_lib_segment_.segment.html#idict_stopword" class="tsd-kind-icon">IDICT_<wbr>STOPWORD</a>
@@ -1526,8 +1713,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_lib_segment_.segment.html#_get_text" class="tsd-kind-icon">_get_<wbr>text</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_lib_segment_.segment.html#_loadblacklistdict" class="tsd-kind-icon">_load<wbr>Blacklist<wbr>Dict</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_lib_segment_.segment.html#_resolvedictfilename" class="tsd-kind-icon">_resolve<wbr>Dict<wbr>Filename</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_segment_.segment.html#addblacklist" class="tsd-kind-icon">add<wbr>Blacklist</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_lib_segment_.segment.html#autoinit" class="tsd-kind-icon">auto<wbr>Init</a>
@@ -1555,6 +1748,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_lib_segment_.segment.html#loadblacklistdict" class="tsd-kind-icon">load<wbr>Blacklist<wbr>Dict</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lib_segment_.segment.html#loadblacklistoptimizerdict" class="tsd-kind-icon">load<wbr>Blacklist<wbr>Optimizer<wbr>Dict</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_lib_segment_.segment.html#loaddict" class="tsd-kind-icon">load<wbr>Dict</a>
